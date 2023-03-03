@@ -6,6 +6,9 @@ import { fadeIn } from '../variants';
 //forms
 import { useForm, ValidationError } from '@formspree/react';
 
+//icons
+import { FaGithub, FaInstagram,  FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+
 const Contact = () => {
     
     const [state, handleSubmit] = useForm("xjvdrgba");
@@ -55,6 +58,25 @@ const Contact = () => {
                     <div>
                         <h4 className='text-x1 uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
                         <h2 className='text-[45px] lg:text-[90px] leading-none mb-12 '>Let´s work <br />together!</h2>
+                        <motion.div 
+                            variants={fadeIn('up', 0.7)} 
+                            initial='hidden' 
+                            whileInView={'show'} 
+                            viewport={{once: false, amount: 0.8}}  
+                            className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
+                            <a href='www.youtube.com' >
+                                <FaInstagram/>
+                            </a>
+                            <a href='https://github.com/leanmaga' >
+                                <FaGithub/>
+                            </a>
+                            <a href='www.dribble.com'>
+                                <FaLinkedinIn/>
+                            </a>
+                            <a href='www.dribble.com'>
+                                <FaTwitter/>
+                            </a>
+                        </motion.div>
                     </div>
                 </motion.div>
                 {/*form*/}

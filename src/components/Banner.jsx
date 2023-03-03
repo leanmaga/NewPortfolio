@@ -1,8 +1,6 @@
 import React from 'react';
 //images
 import Image from '../assets/me2.png';
-//icons
-import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
 //type animation
 import { TypeAnimation } from 'react-type-animation';
 //motion
@@ -79,22 +77,7 @@ const Banner = () => {
             
             {/*socials*/}
             
-            <motion.div 
-            variants={fadeIn('up', 0.7)} 
-            initial='hidden' 
-            whileInView={'show'} 
-            viewport={{once: false, amount: 0.8}}  
-            className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href='www.youtube.com' >
-                <FaYoutube/>
-              </a>
-              <a href='https://github.com/leanmaga' >
-                <FaGithub/>
-              </a>
-              <a href='www.dribble.com'>
-                <FaDribbble/>
-              </a>
-            </motion.div>
+            
 
           </div>
 

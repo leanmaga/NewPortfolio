@@ -1,6 +1,5 @@
 import React from 'react';
 //icon
-import { BsArrowUpRight } from 'react-icons/bs';
 //motion
 import { motion } from 'framer-motion';
 //variants
@@ -9,23 +8,23 @@ import { fadeIn } from '../variants';
 const services = [
   {
     name: 'UI/UX Design',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, sed',
-    link: 'Learn more',
+    description: 'Creación de interfaces intuitivas y atractivas para sitios web y aplicaciones móviles. Mi enfoque principal es mejorar la experiencia del usuario al interactuar con la tecnología. Utilizo una combinación de habilidades de diseño y psicología cognitiva para crear interfaces fáciles de usar y atractivas visualmente.',
+    
   },
   {
     name: 'Developmen',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, sed',
-    link: 'Learn more',
+    description: 'Tengo experiencia en la creación de soluciones personalizadas para empresas y organizaciones. Utilizo las últimas tecnologías y herramientas para desarrollar aplicaciones y sistemas web de alta calidad que cumplan con las necesidades y requisitos específicos de cada cliente. Mi enfoque se centra en la creación de soluciones escalables y fáciles de mantener.',
+    
   },
   {
     name: 'Digital Marketing',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, sed',
-    link: 'Learn more',
+    description: 'En cuanto a Digital Marketing, me enfoco en ayudar a las empresas a mejorar su presencia en línea y aumentar su visibilidad. Mis estrategias de marketing digital incluyen la creación de contenido de calidad, la optimización de motores de búsqueda (SEO), la publicidad en redes sociales, y el email marketing. Me aseguro de que mis clientes alcancen sus objetivos de negocio utilizando las últimas herramientas y técnicas de marketing digital.',
+    
   },
   {
     name: 'Product Branding',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, sed',
-    link: 'Learn more',
+    description: 'En Product Branding, mi enfoque es ayudar a las empresas a construir y fortalecer su identidad de marca. Desde la creación del logotipo hasta el desarrollo de la estrategia de marca completa, trabajo en colaboración con los clientes para asegurar que su marca refleje sus valores y objetivos empresariales. Me aseguro de que cada elemento de la marca sea coherente y atractivo para los clientes potenciales.',
+    
   },
 
 ]
@@ -54,30 +53,21 @@ const Services = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}  
-          className='flex-1 m-12 lg:mb-0'>
+          className='flex-1 m-4 lg:mb-0'>
 
             {/*service list*/}
             <div>
               {services.map((service, index) => {
 
                 //destructure service
-                const { name, description, link } = service;
+                const { name, description } = service;
 
                 return(
-                  <div className='border-b border-white/20 h-[146px] mb-[38px] flex md:h-[112px] md:mb-[24px]' key={index}>
+                  <div className='border-b border-white/20 flex' key={index}>
                     
                     <div className='max-w-[476px]'>
-                      <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6 md:text-[16px]'>{ name }</h4>
-                      <p className='font-secondary leading-tight'>{ description }</p>
-                    </div>
-
-                    <div className='flex flex-col flex-1 items-end'>
-                      <a href="www.github.com/leanmaga" className='btn w-9 h-9 mb-[42px] md:mb-[24px] flex justify-center items-center'>
-                        <BsArrowUpRight />
-                      </a>
-                      <a href="www.github.com/leanmaga" className='text-gradient text-sm'>
-                        { link }
-                      </a>
+                      <h4 className='text-[20px] tracking-wider font-primary font-semibold m-4 md:text-[16px]'>{ name }</h4>
+                      <p className='font-secondary leading-tight m-4'>{ description }</p>
                     </div>
 
                   </div>

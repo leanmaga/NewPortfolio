@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: repeating-linear-gradient(to right, #57007B, #57007B 10%, #4D006D 10%, #4D006D 20%, #43005F 20%, #43005F 30%, #390051 30%, #390051 40%, #2F0043 40%, #2F0043 50%, #250035 50%, #250035 60%, #1B0027 60%, #1B0027 70%, #110019 70%, #110019 80%, #07000B 80%, #07000B 90%, #000000 90%, #000000);
+  background-repeat: repeat-y;
+  background-size: 100% 10%;
+}
+
+
+ 
 .figure{
   width: 400px;
   height: 400px;
@@ -32,10 +40,7 @@
     #3bace2 100%,
     #406aff 117.04%
   );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
   
-  
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
   filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 1.7));
 }
 
