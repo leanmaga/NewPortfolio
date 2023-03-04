@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 //variants
 import { fadeIn } from '../variants'
 //img
-import Img1 from '../assets/portfolio-img1.png'
-import Img2 from '../assets/portfolio-img2.png'
-import Img3 from '../assets/portfolio-img3.png'
+import Img1 from '../assets/muebles.png'
+import Img2 from '../assets/frank.png'
+import Img3 from '../assets/sele.png'
 
 const Work = () => {
   return (
@@ -22,8 +22,8 @@ const Work = () => {
             {/*text*/}
             <div>
               <h2 className='h3 leading-tight text-accent'>My Latest Work.</h2>
-              <p className="max-w-sm mb-16 md:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, alias? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, et!</p>
-              <button className="btn btn-sm"><a href="https://github.com/leanmaga">View all Projects</a></button>
+              <p className="max-w-sm mb-16 md:mb-4 text-[14px]">Recently, I've worked on several exciting projects including creating a landing page for a furniture factory, an online store for a footwear company, and designing and developing the website for Amway. I focused on creating attractive, user-friendly interfaces that were optimized for an enhanced user experience.</p>
+              <button className="btn btn-sm"><a href="https://github.com/leanmaga" target="_blank" rel="noreferrer">View all Projects</a></button>
             </div>
             {/*image*/}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
@@ -33,11 +33,11 @@ const Work = () => {
               <img src={Img1} alt="portfoliowork1" className='group-hover:scale-125 transition-all duration-500'/>
               {/*pretitle*/}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'><a href="https://leanmaga.github.io/mueblesmagallanes/" target="_blank" rel="noopener noreferrer">Web Site</a></span>
               </div>
               {/*title*/}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className='text-3x1 text-white '>Project Title</span>
+                <span className='text-3x1 text-white '>Fábrica de Muebles</span>
               </div>
             </div>
           </motion.div>
@@ -55,11 +55,11 @@ const Work = () => {
               <img src={Img2} alt="portfoliowork1" className='group-hover:scale-125 transition-all duration-500'/>
               {/*pretitle*/}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'><a href="https://leanmaga.github.io/frank-ventas/" target="_blank" rel="noopener noreferrer">Web Site</a> </span>
               </div>
               {/*title*/}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className='text-3x1 text-white '>Project Title</span>
+                <span className='text-3x1 text-white '>Frank Ventas</span>
               </div>
             </div>
             {/*image*/}
@@ -70,11 +70,11 @@ const Work = () => {
               <img src={Img3} alt="portfoliowork1" className='group-hover:scale-125 transition-all duration-500'/>
               {/*pretitle*/}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'><a href="https://leanmaga.github.io/store/" target="_blank" rel="noopener noreferrer">Landing Page</a></span>
               </div>
               {/*title*/}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className='text-3x1 text-white '>Project Title</span>
+                <span className='text-3x1 text-white '>Sele-Style</span>
               </div>
             </div>
 

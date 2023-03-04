@@ -8,6 +8,9 @@ import { motion } from 'framer-motion';
 //variant
 import {fadeIn} from '../variants'
 
+//cv
+import CV from '../assets/pdf/cv.pdf';
+
 const About = () => {
 
   const [ref, inView] = useInView({
@@ -27,7 +30,7 @@ const About = () => {
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{ once: false, amount: 0.3 }}  
-                    className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top md:h-[380px]'>
+                    className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top md:h-[380px] '>
                   </motion.div>
 
                   {/*text*/}
@@ -46,24 +49,24 @@ const About = () => {
                       {/*stats*/}
 
                       <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
-                        <div>
-                          <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                        <div className='mb-4'>
+                          <div className='text-[40px] font-tertiary text-gradient mt-4 mb-2'>
                             { inView ?
                                 <CountUp start={0} end={3} duration={3}/> : null
                             }+
                           </div>
                           <div className='font-primary text-sm tracking-[2px]'>Years of <br/> experience</div>
                         </div>
-                        <div>
-                          <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                        <div className='mb-4'>
+                          <div className='text-[40px] font-tertiary text-gradient mt-4  mb-2'>
                             { inView ?
                                 <CountUp start={0} end={30} duration={3}/> : null
                             }+
                           </div>
                           <div className='font-primary text-sm tracking-[2px]'>Projects <br/> completed</div>
                         </div>
-                        <div>
-                          <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                        <div className='mb-4'>
+                          <div className='text-[40px] font-tertiary text-gradient mt-4 mb-2'>
                             { inView ?
                                 <CountUp start={0} end={20} duration={3}/> : null
                             }+
@@ -72,8 +75,12 @@ const About = () => {
                         </div>
                       </div>
                       <div className='flex gap-x-8 items-center'>
-                        <button className='btn btn-lg'>Contact me</button>
-                        <a href="www.github.com/leanmaga" className='text-graient btn-link'>My Portfolio</a>
+                        <button className='btn btn-lg'>
+                          <a href="#contact">Contact me</a>
+                        </button>
+                        <a className='text-gradient btn-link' href={CV} download='Leandro Magallanes Curriculum Vitae'>
+                          My Curriculum Vitae
+                        </a>
                       </div>
 
                   </motion.div>

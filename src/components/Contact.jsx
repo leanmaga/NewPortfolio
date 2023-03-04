@@ -63,17 +63,17 @@ const Contact = () => {
                             initial='hidden' 
                             whileInView={'show'} 
                             viewport={{once: false, amount: 0.8}}  
-                            className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-                            <a href='www.youtube.com' >
+                            className='flex text-[20px] gap-x-6 max-w-max lg:mx-0 mb-4 icons-contact'>
+                            <a href='https://instagram.com/le_mark2023' target="_blank" rel="noreferrer">
                                 <FaInstagram/>
                             </a>
-                            <a href='https://github.com/leanmaga' >
+                            <a href='https://github.com/leanmaga' target="_blank" rel="noreferrer">
                                 <FaGithub/>
                             </a>
-                            <a href='www.dribble.com'>
+                            <a href='https://www.linkedin.com/in/leandromagallanes/' target="_blank" rel="noreferrer">
                                 <FaLinkedinIn/>
                             </a>
-                            <a href='www.dribble.com'>
+                            <a href='https://twitter.com/Le_Mark2023' target="_blank" rel="noreferrer">
                                 <FaTwitter/>
                             </a>
                         </motion.div>
